@@ -1,4 +1,7 @@
 # Yii2 jQuery-loading
+[![Latest Stable Version](https://poser.pugx.org/loveorigami/yii2-jquery-loading/v/stable)](https://packagist.org/packages/loveorigami/yii2-jquery-loading) 
+[![Total Downloads](https://poser.pugx.org/loveorigami/yii2-jquery-loading/downloads)](https://packagist.org/packages/loveorigami/yii2-jquery-loading)
+[![License](https://poser.pugx.org/loveorigami/yii2-jquery-loading/license)](https://packagist.org/packages/loveorigami/yii2-jquery-loading)
 
 A wrapper around Yii2 [jQuery-loading](https://github.com/CarlosBonetti/jquery-loading) for using with AJAX requests.  
 
