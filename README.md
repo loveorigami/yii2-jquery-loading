@@ -1,6 +1,6 @@
 # Yii2 jQuery-loading
 
-A wrapper around Yii2 jQuery-loading for using with AJAX requests.  
+A wrapper around Yii2 [jQuery-loading](https://github.com/CarlosBonetti/jquery-loading) for using with AJAX requests.  
 
 ## Installation
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
@@ -17,23 +17,24 @@ to the require section of your composer.json file.
 
 ## Usage
 
+In layout
+
+```php
+echo lo\widgets\loading\JqueryLoading::widget($this->params['loading']);
+```
+
 In view
 
 ```php
-lo\widgets\loading\JqueryLoadingAsset::register($this);
-```
-
-or as dependency in your main application asset bundle
-
-```php
-class AppAsset extends AssetBundle
-{
-	// ...
-
-	public $depends = [
-		// ...
-		'lo\widgets\loading\JqueryLoadingAsset'
-	];
-}
+$this->params['loading'] = [
+    'element' => 'body', // or #my-id_element, or .my-class_element
+    'options' => [
+        'stoppable' => true,
+        'theme' => 'dark',
+        'message' => 'Working...'
+        
+        // and more here http://carlosbonetti.github.io/jquery-loading
+    ]
+]
 ```
 

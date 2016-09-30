@@ -5,7 +5,7 @@
     "yii2",
     "ajax",
     "loading",
-	"jquery-loading"
+    "jquery-loading"
   ],
   "homepage": "https://github.com/loveorigami/yii2-jquery-loading",
   "type": "yii2-extension",
@@ -16,15 +16,10 @@
       "homepage": "http://loveorigami.info"
     }
   ],
-      "require": {
-        "yiisoft/yii2": "*",
-        "bower-asset/jquery-loading": "*"
-    },
-	"extra": {
-		"asset-installer-paths": {
-			"bower-asset-library": "vendor/bower"
-		}
-	},
+  "require": {
+    "yiisoft/yii2": "*",
+    "bower-asset/jquery-loading": "*"
+  },
   "autoload": {
     "psr-4": {
       "lo\\widgets\\loading\\": "/src"
