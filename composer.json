@@ -24,7 +24,7 @@
 		"asset-installer-paths": {
 			"bower-asset-library": "vendor/bower"
 		}
-	}
+	},
   "autoload": {
     "psr-4": {
       "lo\\widgets\\loading\\": "/src"
