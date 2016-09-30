@@ -5,7 +5,7 @@
     "yii2",
     "ajax",
     "loading",
-	"jquery-loading",
+	"jquery-loading"
   ],
   "homepage": "https://github.com/loveorigami/yii2-jquery-loading",
   "type": "yii2-extension",
