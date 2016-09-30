@@ -16,6 +16,15 @@
       "homepage": "http://loveorigami.info"
     }
   ],
+      "require": {
+        "yiisoft/yii2": "*",
+        "bower-asset/jquery-loading": "*",
+    },
+	"extra": {
+		"asset-installer-paths": {
+			"bower-asset-library": "vendor/bower"
+		}
+	}
   "autoload": {
     "psr-4": {
       "lo\\widgets\\loading\\": "/src"

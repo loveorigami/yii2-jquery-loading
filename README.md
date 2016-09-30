@@ -8,12 +8,10 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 ```sh
 $ php composer.phar require --prefer-dist loveorigami/yii2-jquery-loading "@dev"
-$ php composer.phar require --prefer-dist bower-asset/jquery-loading "*"
 ```
 or add
 ```
-"loveorigami/yii2-jquery-loading": "@dev",
-"bower-asset/jquery-loading": "*"
+"loveorigami/yii2-jquery-loading": "@dev"
 ```
 to the require section of your composer.json file.
 
