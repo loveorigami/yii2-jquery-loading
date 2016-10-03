@@ -23,7 +23,7 @@ to the require section of your composer.json file.
 In layout
 
 ```php
-echo lo\widgets\loading\JqueryLoading::widget($this->params['loading']);
+echo lo\widgets\loading\JqueryLoading::widget(isset($this->params['loading']) ? $this->params['loading'] : []);
 ```
 
 In view
