@@ -5,14 +5,14 @@ use yii\web\AssetBundle;
 
 class JqueryLoadingAsset extends AssetBundle{
 
-    public $sourcePath = '@vendor/bower/jquery-loading';
+    public $sourcePath = '@bower/jquery-loading/dist';
 	
     public $css = [
-        'dist/jquery.loading.css'
+        'jquery.loading.css'
     ];
 	
     public $js = [
-        'dist/jquery.loading.js'
+        'jquery.loading.js'
     ];
 	
     public $depends = [
