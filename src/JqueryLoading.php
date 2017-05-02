@@ -43,11 +43,16 @@ class JqueryLoading extends Widget
         $options = Json::encode(ArrayHelper::merge(self::$default, $this->options));
 
         $this->view->registerJs("
-            $(document).ajaxStart(function () {
-               jQuery('{$this->element}').loading($options);
+            $.ajaxSetup({
+                showLoading: true // default for all ajax calls
             });
-            $(document).ajaxComplete(function (event, xhr, settings) {
-               jQuery('{$this->element}').loading('stop');
+            $(document).ajaxSend(function(event, xhr, settings) {
+                if(settings.showLoading){
+                    jQuery('{$this->element}').loading($options);
+                    settings.showLoading = false;
+                }
+            }).ajaxComplete(function (event, xhr, settings) {
+                jQuery('{$this->element}').loading('stop');
             });
         ", $view::POS_END);
     }
